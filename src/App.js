@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Body from './components/Body'
+import UseEffect from './components/UseEffect';
 
 
 function App(){
@@ -39,13 +40,18 @@ function App(){
             </div>
 
             <div className="row">
-                <div className="col-sm-6">
+                <div className="col-sm-4">
                     <Header Iam={Iam} toggle={toggle} addArrayBGC2={addArrayBGC2}/>
                 </div>
 
-                <div className="col-sm-6">
+                <div className="col-sm-4">
                     <Body number={counter} add={handleClickAdd} toggleWhoIam = {toggleWhoIam} displayDataToBGC2={dataToBGC2} />
                 </div>
+
+                <div className="col-sm-4">
+                    <UseEffect />
+                </div>
+
             </div>
 
         </div>
